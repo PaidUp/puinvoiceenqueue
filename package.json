@@ -1,0 +1,23 @@
+{
+  "name": "pu-invoice-enqueue",
+  "version": "0.0.1",
+  "description": "invoice enqueue service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PaidUp/PUInvoiceEnqueue.git"
+  },
+  "author": "riclara@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaidUp/PUInvoiceEnqueue/issues"
+  },
+  "homepage": "https://github.com/PaidUp/PUInvoiceEnqueue#readme",
+  "dependencies": {
+    "mongodb": "^3.0.4",
+    "sqs": "^2.0.2"
+  }
+}
