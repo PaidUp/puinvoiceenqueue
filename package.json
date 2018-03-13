@@ -4,6 +4,7 @@
   "description": "invoice enqueue service",
   "main": "index.js",
   "scripts": {
+    "package": "zip -r invoiceEnqueue.zip *",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -3,3 +3,5 @@ node_modules
 *.retry
 dist/
 .idea
+config.js
+invoiceEnqueue.zip

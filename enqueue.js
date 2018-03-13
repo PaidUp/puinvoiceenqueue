@@ -1,17 +1,13 @@
 const sqs = require('sqs')
+const config = require('./config')
 let enqueue
 
-const queue = sqs({
-  access: '',
-  secret: '',
-  region: 'us-east-1' // defaults to us-east-1
-})
-const queueName = 'invoice-dev'
+const queue = sqs(config.sqs.credentials)
 
 class Enqueue {
   push (message) {
     return new Promise((resolve, reject) => {
-      queue.push(queueName, message, err => {
+      queue.push(config.sqs.queueName, message, err => {
         if (err) return resolve(false)
         resolve(message._id)
       })

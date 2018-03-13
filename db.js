@@ -1,5 +1,6 @@
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://pudevelop:xEbiMFBtX48ObFgC@pu-dev-shard-00-00-4nodg.mongodb.net:27017,pu-dev-shard-00-01-4nodg.mongodb.net:27017,pu-dev-shard-00-02-4nodg.mongodb.net:27017/develop?ssl=true&replicaSet=pu-dev-shard-0&authSource=admin'
+const config = require('./config')
+const url = config.mongo.url
 let db
 
 class Db {
