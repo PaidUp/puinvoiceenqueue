@@ -9,7 +9,7 @@ module.exports.handler = (event, context, callback) => {
       if (err) return callback(err)
       Promise.all(items.map(enqueue.push)).then(results => {
         collection.update({ _id: { $in: results } },
-          { $set: { status: 'enqueue' } },
+          { $set: { status: 'enqueue' }, $inc: { __v: 1 } },
           {multi: true},
           (err, data) => {
             if (err) return callback(err)

@@ -4,4 +4,5 @@ node_modules
 dist/
 .idea
 config.js
+invoke.js
 invoiceEnqueue.zip
