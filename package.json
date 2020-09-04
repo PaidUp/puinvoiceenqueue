@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/PaidUp/PUInvoiceEnqueue#readme",
   "dependencies": {
-    "mongodb": "^3.0.4",
+    "mongodb": "^3.1.13",
     "sqs": "^2.0.2"
   }
 }
